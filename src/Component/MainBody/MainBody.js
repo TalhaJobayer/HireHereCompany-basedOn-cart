@@ -11,9 +11,11 @@ const MainBody = () => {
         .then(res=>res.json())
         .then(data=>setPersons(data))
     },[])
-    const HandleCart=(SelectedPerson)=>{
-        const newCArt=[...cart,SelectedPerson]
+    const HandleCart=(persons)=>{
+        console.log(persons);
+        const newCArt=[...cart,persons]
         setCart(newCArt)
+        console.log(newCArt);
     }
     
     return (
@@ -27,14 +29,19 @@ const MainBody = () => {
                  {
                      parsons.map(person=><Person
                         person={person}
-                       
+                        HandleCart={HandleCart}
                         key={person.id}
                      ></Person> )
                  }   
             </div>
             <div className="cart-part">
-                <AddCart
-               ></AddCart>
+               {
+                   cart.map(addedPerson=><AddCart
+                    addedPerson={addedPerson}
+                   ></AddCart>)
+               }
+               
+                
             </div>
         </div>
         </div>

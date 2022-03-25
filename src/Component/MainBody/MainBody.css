@@ -17,5 +17,8 @@
 
 .cart-part {
     width: 20%;
+    background-color: burlywood;
+    border-radius: 25px;
+    text-align: left;
 
 }

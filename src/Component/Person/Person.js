@@ -1,9 +1,9 @@
 import React from 'react';
 import './Person.css'
 
-const Person = (props,HandleCart) => {
+const Person = ({person,HandleCart}) => {
     
-         const {gender,first_name,email,expected_salery,image,id}=props.person
+         const {gender,first_name,email,expected_salery,image,id}=person
     return (
         <div className='person-container'>
             <div className="image-part">
@@ -16,7 +16,7 @@ const Person = (props,HandleCart) => {
             <p><b>Gender</b>: {gender}</p>
             
             </div>
-            <button onClick={()=>HandleCart()} className='Hire-Me'>Hire Me</button>
+            <button onClick={()=>HandleCart(person)} className='Hire-Me'>Hire Me</button>
         </div>
     );
 };

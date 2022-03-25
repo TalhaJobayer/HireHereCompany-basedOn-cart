@@ -1,4 +1,15 @@
 .Cart-container {
-    background-color: burlywood;
-    border-radius: 25px;
+    display: flex;
+}
+
+img-part {
+    width: 30%;
+    position: relative;
+
+}
+
+
+
+.text-part {
+    width: 70%;
 }
