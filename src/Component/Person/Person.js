@@ -2,7 +2,8 @@ import React from 'react';
 import './Person.css'
 
 const Person = (props) => {
-         const {gender,first_name,email,expected_salery,image}=props.person
+    
+         const {gender,first_name,email,expected_salery,image,id}=props.person
     return (
         <div className='person-container'>
             <div className="image-part">
@@ -15,7 +16,7 @@ const Person = (props) => {
             <p><b>Gender</b>: {gender}</p>
             
             </div>
-            <button className='Hire-Me'>Hire Me</button>
+            <button  className='Hire-Me'>Hire Me</button>
         </div>
     );
 };

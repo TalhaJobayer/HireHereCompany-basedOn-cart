@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AddCart from '../AddCart/AddCart';
 import Person from '../Person/Person';
 import './MainBody.css'
 
@@ -9,6 +10,7 @@ const MainBody = () => {
         .then(res=>res.json())
         .then(data=>setPersons(data))
     },[])
+    
     return (
         
 
@@ -20,12 +22,13 @@ const MainBody = () => {
                  {
                      parsons.map(person=><Person
                         person={person}
+                       
                         key={person.id}
                      ></Person> )
                  }   
             </div>
             <div className="cart-part">
-                <h2>ughi</h2>
+                <AddCart></AddCart>
             </div>
         </div>
         </div>
