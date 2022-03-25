@@ -1,7 +1,7 @@
 import React from 'react';
 import './Person.css'
 
-const Person = (props) => {
+const Person = (props,HandleCart) => {
     
          const {gender,first_name,email,expected_salery,image,id}=props.person
     return (
@@ -16,7 +16,7 @@ const Person = (props) => {
             <p><b>Gender</b>: {gender}</p>
             
             </div>
-            <button  className='Hire-Me'>Hire Me</button>
+            <button onClick={()=>HandleCart()} className='Hire-Me'>Hire Me</button>
         </div>
     );
 };

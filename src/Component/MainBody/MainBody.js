@@ -5,11 +5,16 @@ import './MainBody.css'
 
 const MainBody = () => {
     const [parsons,setPersons]=useState([])
+    const [cart,setCart]=useState([])
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res=>res.json())
         .then(data=>setPersons(data))
     },[])
+    const HandleCart=(SelectedPerson)=>{
+        const newCArt=[...cart,SelectedPerson]
+        setCart(newCArt)
+    }
     
     return (
         
@@ -28,7 +33,8 @@ const MainBody = () => {
                  }   
             </div>
             <div className="cart-part">
-                <AddCart></AddCart>
+                <AddCart
+               ></AddCart>
             </div>
         </div>
         </div>
