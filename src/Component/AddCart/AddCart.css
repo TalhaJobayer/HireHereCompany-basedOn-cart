@@ -13,3 +13,18 @@ img-part {
 .text-part {
     width: 70%;
 }
+
+
+
+.removeBTn {
+    background-color: burlywood;
+    border: 2px solid burlywood;
+}
+
+.icon {
+    transition: 1s;
+}
+
+.icon:hover {
+    color: rgba(204, 28, 5);
+}

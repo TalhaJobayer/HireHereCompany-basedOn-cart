@@ -22,3 +22,33 @@
     text-align: left;
 
 }
+
+.clearBtn {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 70%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.clearBtn:hover {
+    background-color: orange;
+}
+
+.randomBtn {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 70%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.randomBtn:hover {
+    background-color: orange;
+}

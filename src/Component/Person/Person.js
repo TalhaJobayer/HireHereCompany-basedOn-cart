@@ -1,5 +1,6 @@
 import React from 'react';
 import './Person.css'
+import {BsFillCartCheckFill} from 'react-icons/bs'
 
 const Person = ({person,HandleCart}) => {
     
@@ -16,7 +17,7 @@ const Person = ({person,HandleCart}) => {
             <p><b>Gender</b>: {gender}</p>
             
             </div>
-            <button onClick={()=>HandleCart(person)} className='Hire-Me'>Hire Me</button>
+            <button onClick={()=>HandleCart(person)} className='Hire-Me'><b>Hire Me </b><BsFillCartCheckFill size="20"></BsFillCartCheckFill> </button>
         </div>
     );
 };
