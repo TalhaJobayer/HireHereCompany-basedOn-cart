@@ -1,12 +1,20 @@
 .container {
     display: flex;
+
+
+
 }
 
 .person-part {
-    width: 70%;
-    border: 1px solid red;
+    width: 80%;
+    border: 1px solid rgb(161, 156, 156);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .1);
+
 }
 
 .cart-part {
-    width: 30%;
+    width: 20%;
 }

@@ -21,6 +21,7 @@
     "last_name": "Radki",
     "email": "mradki2@apple.com",
     "gender": "Female",
+    "expected_salery": "7050",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfoBKoDV0jSxMJYLt-4MkPwQKya-E36EN8fB3egqIGPJ6dUPoKhJAp7w6sR4u1r8x4lMk&usqp=CAU"
   }, {
     "id": 4,
@@ -53,13 +54,14 @@
     "email": "nlamasna6@soup.io",
     "gender": "Female",
     "expected_salery": "500",
-    "image": "http://dummyimage.com/131x100.png/5fa2dd/ffffff"
+    "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   }, {
     "id": 8,
     "first_name": "Pyotr",
     "last_name": "Chevolleau",
     "email": "pchevolleau7@linkedin.com",
     "gender": "Male",
+    "expected_salery": "5002",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMc2J9ScOIsIc4rhv0_Mn0hWreULpcNqQvMjDyzu3GGM_2smlOOZROvHDPMg2QijHJivQ&usqp=CAU"
   }, {
     "id": 9,

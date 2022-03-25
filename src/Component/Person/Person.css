@@ -1,0 +1,42 @@
+.person-container {
+    border: 1px solid gray;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #FFF;
+    position: relative;
+
+
+
+}
+
+.image-part img {
+    width: 250px;
+    padding-top: 10px;
+    height: 250px;
+
+
+
+}
+
+
+.text-part {
+    margin-bottom: 20px;
+}
+
+.Hire-Me {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: burlywood;
+
+    transition: 1s;
+    cursor: pointer;
+}
+
+.Hire-Me:hover {
+    background-color: orange;
+}
