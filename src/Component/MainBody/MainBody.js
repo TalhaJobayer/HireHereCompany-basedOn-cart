@@ -14,12 +14,9 @@ const MainBody = () => {
         .then(data=>setPersons(data))
     },[])
     const HandleCart=(SelectedCartId)=>{
-        //  if(SelectedCartId.length<5){
-           
-            const newCArt=[...cart,SelectedCartId]
+         const newCArt=[...cart,SelectedCartId]
            if(cart.length<4 )
             setCart(newCArt)
-        //  }
              
     }
     const DeleteCart=()=>{
