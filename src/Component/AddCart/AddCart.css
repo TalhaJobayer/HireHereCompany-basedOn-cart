@@ -28,3 +28,23 @@ img-part {
 .icon:hover {
     color: rgba(204, 28, 5);
 }
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .Cart-container {
+        display: block;
+    }
+
+    img-part {
+        width: 30%;
+        position: relative;
+
+    }
+
+
+
+    .text-part {
+        width: 70%;
+    }
+
+
+}

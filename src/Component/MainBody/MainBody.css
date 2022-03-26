@@ -52,3 +52,13 @@
 .randomBtn:hover {
     background-color: orange;
 }
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .person-part {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
