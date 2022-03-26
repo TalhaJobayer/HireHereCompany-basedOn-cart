@@ -3,7 +3,7 @@ import AddCart from '../AddCart/AddCart';
 import Person from '../Person/Person';
 import logo from '../../logo/hh-logo.png'
 import './MainBody.css'
-import Random from '../Random/Random';
+
 
 const MainBody = () => {
     const [parsons,setPersons]=useState([])
@@ -15,7 +15,10 @@ const MainBody = () => {
     },[])
     const HandleCart=(SelectedCartId)=>{
          const newCArt=[...cart,SelectedCartId]
-           if(cart.length<4 )
+         cart.map(singleCart=>singleCart.id)
+        //  const d=cart.filter(dCArt=>!dCArt.id===SelectedCartId.id)
+
+           if(cart.length<4  )
             setCart(newCArt)
              
     }
@@ -27,17 +30,16 @@ const MainBody = () => {
         const items = cart.filter(item => item.id !== itemId)
         setCart(items)   
     }
-    const [minimum,setminimum]=useState(cart.length)
-    const [maximum,setmaximum]=useState(cart.length+1)
+   
     const[random,setrandom]=useState(0)
 
     const randomHandle=()=>{
 
        
-        const getRandom=(Math.floor(Math.random() * (maximum + minimum )) )
+        const getRandom=cart[Math.floor(Math.random() * cart.length)]
       
         setrandom(getRandom)
-        console.log(getRandom);
+        
         
     }
    
@@ -66,9 +68,29 @@ const MainBody = () => {
                    cart.map(addedPerson=><AddCart
                     key={addedPerson.id}
                     removeCart={ removeCart}
+                    
                     addedPerson={addedPerson}
                    ></AddCart>)
+                
                   
+               }
+               {
+                <div className='Cart-container'>
+                  <div className="img-part">
+                      <img src={random.image} width="100px" 
+           height="100px"  alt="" />
+                  </div>
+                  <div className="text-part">
+                      <h3>Name:{random.first_name}</h3>
+                      
+                  <h4>salary:{random.expected_salery}</h4>
+                  
+                 
+                  </div>
+              </div>
+
+
+
                }
                
                
